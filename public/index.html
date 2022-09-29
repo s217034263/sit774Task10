@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Express/SQLite3 Demo</title>
+
+    <meta charset="utf-8">
+    <meta name="author" content="SIT774">
+    <meta name="description" content="Express Sqlite3 Demo">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Latest compiled and minified CSS -->
+    <!-- CSS only -->
+    <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+
+        <h1> Online Form - Sqlite3 table creation</h1>
+
+        <form action="/users" method="post">
+            <div class="form-group">
+                <label for="usr">Name:</label>
+                <input type="text" class="form-control" name="name" id="usr">
+            </div>
+            <div class="form-group">
+                <label for="ttl">Title:</label>
+                <input type="text" class="form-control" name="title" id="ttl">
+            </div>
+            <div class="form-group">
+                <label for="cmnt">Comment:</label>
+                <input type="text" class="form-control" name="comment" id="cmnt">
+            </div>
+            <div class="form-group">
+                <label for="eml">Email:</label>
+                <input type="text" class="form-control" name="email" id="eml">
+            </div>
+            <div class="form-group">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="optradio"
+                        id="option1" value="1">
+                    <label for="option1" class="form-check-input my-auto">Option
+                        1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="optradio"
+                        id="option2" value="2">
+                    <label for="option2" class="form-check-input my-auto">Option
+                        2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="optradio"
+                        id="option3" value="3">
+                    <label for="option3" class="form-check-input my-auto">Option
+                        3</label>
+                </div>
+            </div>
+
+            <button type="submit" value="Create Profile"
+                class="btn btn-primary">Submit</button>
+        </form>
+
+        <hr>
+        <p>Use the following button to retireve information from DB</p>
+        <form action="/users" method="get">
+            <button type="submit" value="Get Users" class="btn btn-primary">Get
+                Users</button>
+        </form>
+
+    </div>
+
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
